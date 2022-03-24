@@ -1,0 +1,22 @@
+{
+  "name": "boxed-expression-component-regressiontests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "yarn run cypress open --project it-tests",
+    "cy:run": "yarn run cypress run -b chrome --project it-tests --config watchForFileChanges=false",
+    "cy:updateSnapshots": "npm run cy:run --env updateSnapshots=true"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress-image-snapshot": "^4.0.1"
+  },
+  "dependencies": {
+    "@types/mocha": "^9.1.0",
+    "mocha": "^9.2.2",
+    "typescript": "^4.6.2"
+  }
+}

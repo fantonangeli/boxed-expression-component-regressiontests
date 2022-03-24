@@ -1,0 +1,6 @@
+## ci
+!/.ci
+
+## node
+**/node_modules/
+
